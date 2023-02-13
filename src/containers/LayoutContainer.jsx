@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { MODAL_MODE } from "../constants";
 import { Layout } from "../components/Layout/Layout";
-import { createTodoData } from "../halpers/createTodoData";
+import { createTodoData } from "../helpers/createTodoData";
 
 const rows = [createTodoData("Test title", "description", "10/10/2022")];
 
