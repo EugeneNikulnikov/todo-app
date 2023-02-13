@@ -10,7 +10,7 @@ export function LayoutContainer() {
   const [todos, setTodos] = useState(rows);
   const [selectedTodo, setSelectedTodo] = useState();
   const [isModalOpen, setModalOpen] = useState(false);
-  const [modalMode, setModalMode] = useState();
+  const [modalMode, setModalMode] = useState(MODAL_MODE.CREATE);
 
   const addTodo = (todo) => {
     if (!todo) {

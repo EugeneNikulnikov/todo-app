@@ -1,8 +1,8 @@
 import React from "react";
 
 import { ButtonsWrapper } from "../ButtonsWrapper/ButtonsWrapper";
-import { TodoModal } from "../TodoModal/TodoModal";
 import { TableContainer } from "../../containers/TableContainer";
+import { TodoModalContainer } from "../../containers/TodoModalContainer";
 
 export const Layout = ({
   todos,
@@ -22,7 +22,7 @@ export const Layout = ({
 
     <ButtonsWrapper createTodo={openCreateModal} editTodo={openEditModal} removeTodo={() => removeTodo(selectedTodo)} />
 
-    <TodoModal
+    <TodoModalContainer
       isOpen={isModalOpen}
       setModalOpen={setModalOpen}
       addTodo={addTodo}

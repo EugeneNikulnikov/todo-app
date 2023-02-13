@@ -6,9 +6,9 @@ import moment from "moment";
 import { MODAL_MODE } from "../constants";
 import { TodoModal } from "../components/TodoModal/TodoModal";
 
-export const TodoModalContainer = (isOpen, setModalOpen, addTodo, updateTodo, selectedTodo, modalMode) => {
+export const TodoModalContainer = ({ isOpen, setModalOpen, addTodo, updateTodo, selectedTodo, modalMode }) => {
   const [dateValue, setDateValue] = useState();
-  const { register, handleSubmit, reset } = useForm();
+  const { reset, handleSubmit, register } = useForm();
 
   const closeModal = useCallback(() => setModalOpen(false), []);
 

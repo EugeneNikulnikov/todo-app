@@ -14,8 +14,8 @@ export const TodoModal = ({
   setDateValue,
   closeModal,
 
-  handleSubmit,
   formSubmitHandler,
+  handleSubmit,
   register,
 }) => (
   <Modal
